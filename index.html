@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LudoKING - Jeu de Ludo</title>
+    <title>Rcom Ludo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <h1>🎲 LudoKING</h1>
-        <div id="board"></div>
+    <div id="app">
+        <header>
+            <h1>🎲 Rcom Ludo</h1>
+            <div id="turn-box">Tour du joueur : <span id="current-player">Rouge</span></div>
+        </header>
+        
+        <div id="board-container">
+            <!-- Le plateau sera généré ici par Javascript -->
+        </div>
+
         <div id="controls">
-            <p id="turn-indicator">Tour du joueur : <span id="current-player">Rouge</span></p>
-            <button id="roll-dice">Lancer le dé 🎲</button>
-            <p id="dice-result">Dé : -</p>
+            <button id="roll-btn">Lancer le dé 🎲</button>
+            <div id="dice-display">-</div>
+            <p id="message">Clique sur "Lancer le dé" pour commencer.</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.JS"></script>
 </body>
 </html>
